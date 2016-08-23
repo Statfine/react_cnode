@@ -29,5 +29,6 @@ export function fetchList(tab, page) {
       method: 'GET',
       schema: Schemas.ListSchema,
     },
+    deleteEntities: page,
   };
 }
