@@ -1,0 +1,14 @@
+
+.header {
+    height: 56px;
+    line-height: 56px;
+}
+
+.header .link {
+    color: #b6b6b6;
+    margin: 0 15px;
+}
+
+.context_style {
+    color: #388cf8;
+}

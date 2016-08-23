@@ -1,0 +1,50 @@
+.item {
+    border-bottom: 1px solid #2a2a30;
+    padding-top: 10px;
+    color: #a5a7aa;
+}
+
+.item .title {
+    color: #a5a7aa;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 1.5;
+}
+
+.item .title .tags {
+    padding: 0 7px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-right: 7px;
+}
+
+.content {
+    position: relative;
+    margin: 10px 0;
+    display: inline-flex;
+    width: 100%;
+}
+
+.content .cover {
+    height: 42px;
+    width: 42px;
+    border-radius: 50%;
+}
+
+.content .itemCreat {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.content .time {
+    margin-top: 10px;
+}
+
+.content .itemVisit {
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+}

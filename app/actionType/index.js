@@ -1,0 +1,13 @@
+/**
+ * Created by eastiming on 16/8/23.
+ */
+export const API_REQUEST = 'API_REQUEST';
+export const API_SUCCESS = 'API_SUCCESS';
+export const API_FAILURE = 'API_FAILURE';
+export const API_RESET_RESPONSE = 'API_RESET_RESPONSE';
+
+export const FETCH_LIST_REQUEST = 'FETCH_LIST_REQUEST';
+export const FETCH_LIST_SUCCESS = 'FETCH_LIST_SUCCESS';
+export const FETCH_LIST_FAILURE = 'FETCH_LIST_FAILURE';
+export const FETCH_LIST_RESET_RESPONSE = 'FETCH_LIST_RESET_RESPONSE';
+

@@ -1,0 +1,39 @@
+.titleHeader {
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 20px;
+    color: #e6e6e6;
+    background: #181a1d;
+    border-bottom: #2a2a30 2px solid;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+.homeHeader {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 38px;
+    color: #5f5f5f;
+    background: #181a1d;
+    border-bottom: #2a2a30 2px solid;
+}
+
+.homeHeader li {
+    width: 20%;
+    float: left;
+    text-align: center;
+    line-height: 38px;
+}
+
+.homeHeader li .choose {
+    width: 30px;
+    width: 40px;
+    height: 32px;
+    margin: 0 auto;
+    border-bottom: 1px solid #108fe9;
+    color: #108fe9;
+}
+
