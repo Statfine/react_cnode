@@ -22,8 +22,16 @@ export default class HomeIndex extends Component {
   }
 
   componentDidMount() {
-    this.props.fetchList('all', 1);
+    this._handleChangeFilter('all');
   }
+
+  _handleChangeFilter = (filter) => {
+    this.props.fetchList(filter, 1);
+  };
+
+  _getList = (fliter) => {
+    this._handleChangeFilter('fliter');
+  };
 
   _renderItem = () => {
     const {
@@ -52,7 +60,7 @@ export default class HomeIndex extends Component {
 
     return (
       <div style={{ paddingTop: '38px', paddingBottom: '50px' }}>
-        <HomeHeader />
+        <HomeHeader changeFilter={this._handleChangeFilter} />
         <Loading loadAnimation={fetchListStatus.isFetching}/>
         <div style={{ padding: '0 20px' }}>
           {this._renderItem()}

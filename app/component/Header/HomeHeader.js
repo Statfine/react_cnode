@@ -25,7 +25,20 @@ export default class HomeHeader extends Component {
 
   _chooseFilter = (filterChoose) => {
     this.setState({filterChoose});
-  }
+    let filter = '';
+    if (filterChoose === '0') {
+      filter = 'all';
+    } else if (filterChoose === '1') {
+      filter = 'good';
+    } else if (filterChoose === '2') {
+      filter = 'share';
+    } else if (filterChoose === '3') {
+      filter = 'ask';
+    } else if (filterChoose === '4') {
+      filter = 'job';
+    }
+    this.props.changeFilter(filter);
+  };
 
   _renderFilter = () => {
     const { filterChoose } = this.state;
